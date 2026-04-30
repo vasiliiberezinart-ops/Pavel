@@ -4,161 +4,272 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>СВОБОДА — Павел Фахрутдинов</title>
-<meta name="description" content="Клип на трек СВОБОДА. Лагерь для беженцев, тихая клоунада. Препродакшн.">
+<meta name="description" content="Клип на трек СВОБОДА. Лагерь для беженцев. Препродакшн.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Special+Elite&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="topbar">
-  <div class="brand" data-i18n="brand">СВОБОДА</div>
+  <div class="topbar-l">
+    <span class="kicker">"PRE-PRODUCTION"</span>
+    <span class="kicker dim">2026 — IN&nbsp;PROCESS</span>
+  </div>
   <nav class="lang">
     <button class="lang-btn active" data-lang-set="ru">RU</button>
-    <span class="sep">·</span>
+    <span class="sep">/</span>
     <button class="lang-btn" data-lang-set="en">EN</button>
   </nav>
 </header>
 
 <main>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-eyebrow" data-i18n="eyebrow">препродакшн · клип · 2026</div>
-    <h1 class="hero-title">СВОБОДА</h1>
-    <div class="hero-author">Павел&nbsp;Фахрутдинов</div>
-    <div class="hero-tag" data-i18n="tag">Лагерь для беженцев. Тихая клоунада.</div>
-  </section>
-
-  <section class="player">
-    <audio id="track" controls preload="metadata" src="assets/svoboda.mp3"></audio>
-    <img class="wave" src="assets/waveform.png" alt="" aria-hidden="true">
-    <div class="player-meta">
-      <span class="dur">3:27</span>
-      <span class="dot">·</span>
-      <span data-i18n="player_note">Pre-final · 320kbps</span>
+    <div class="hero-tag-l">
+      <span class="num">№ 01</span>
+      <span class="kicker">"MUSIC&nbsp;VIDEO"</span>
+    </div>
+    <div class="hero-img" data-en-fallback="SVOBODA">
+      <img src="assets/hero/svoboda.png" alt="СВОБОДА" class="hero-svoboda hl-only-ru">
+      <span class="hero-svoboda-en hl-only-en">SVOBODA</span>
+    </div>
+    <div class="hero-byline">
+      <span class="hero-by kicker">"BY"</span>
+      <img src="assets/hero/pavel_fakhrutdinov.png" alt="ПАВЕЛ ФАХРУТДИНОВ" class="hero-author hl-only-ru">
+      <span class="hero-author-en hl-only-en">PAVEL FAKHRUTDINOV</span>
+    </div>
+    <div class="hero-tag-r">
+      <span class="kicker" data-i18n="hero_tag">"REFUGEE&nbsp;CAMP."&nbsp;"QUIET&nbsp;CLOWNERY."</span>
     </div>
   </section>
 
+  <!-- TRACK -->
+  <section class="track">
+    <div class="sec-h">
+      <img src="assets/hero/h_track.png" alt="ТРЕК" class="hl-only-ru">
+      <span class="hl-only-en">TRACK</span>
+      <span class="kicker dim">"LISTEN"</span>
+    </div>
+    <div class="track-row">
+      <audio id="track" controls preload="metadata" src="assets/svoboda.mp3"></audio>
+    </div>
+    <img class="wave" src="assets/waveform.png" alt="">
+    <div class="track-meta">
+      <span class="kicker">DUR.&nbsp;3:27</span>
+      <span class="kicker dim">320&nbsp;KBPS</span>
+      <span class="kicker dim">PRE-FINAL</span>
+    </div>
+  </section>
+
+  <!-- CONCEPT -->
   <section class="concept">
+    <div class="sec-h">
+      <img src="assets/hero/h_concept.png" alt="КОНЦЕПТ" class="hl-only-ru">
+      <span class="hl-only-en">CONCEPT</span>
+      <span class="kicker dim">"01 / 04"</span>
+    </div>
     <div class="concept-grid">
       <div class="concept-text">
-        <h2 data-i18n="concept_h">Концепт</h2>
-        <p data-i18n="concept_p1">Эмигрант без лагеря — ни в оппозиции, ни среди возвращенцев. Только в протоколах полиции. Маски, предательство, тоска. «Жизнь после смерти».</p>
-        <p data-i18n="concept_p2">Действие — в лагере для беженцев. Стилистика — клоунада. Тихая. Без шума, без эстрады, без ужаса. Рисунок, бумага, мелки.</p>
+        <p class="big" data-i18n="concept_p1">«Эмигрант без лагеря — ни в оппозиции, ни среди возвращенцев. Только в полицейских протоколах. Маски, предательство, тоска. Жизнь после смерти.»</p>
+        <p class="dim" data-i18n="concept_p2">Действие — в лагере для беженцев. Стилистика — клоунада. Тихая. Без шума, без эстрады, без ужаса. Рисунок, бумага, мелки.</p>
       </div>
-      <div class="concept-meta">
-        <dl>
-          <dt data-i18n="m_director">Режиссёр</dt><dd>Василий Берёзин</dd>
-          <dt data-i18n="m_song">Песня</dt><dd>Павел Фахрутдинов</dd>
-          <dt data-i18n="m_dur">Длительность</dt><dd>3:27</dd>
-          <dt data-i18n="m_format">Формат</dt><dd>HD · 16:9</dd>
-          <dt data-i18n="m_budget">Бюджет</dt><dd>3 000 €</dd>
-          <dt data-i18n="m_loc">Локация</dt><dd data-i18n="loc_v">Лагерь / павильон</dd>
-        </dl>
-      </div>
+      <dl class="concept-meta">
+        <dt class="kicker" data-i18n="m_director">"DIRECTOR"</dt><dd>VASILY&nbsp;BEREZIN</dd>
+        <dt class="kicker" data-i18n="m_song">"SONG"</dt><dd>P.&nbsp;FAKHRUTDINOV</dd>
+        <dt class="kicker" data-i18n="m_dur">"LENGTH"</dt><dd>3 : 27</dd>
+        <dt class="kicker" data-i18n="m_format">"FORMAT"</dt><dd>HD&nbsp;·&nbsp;16:9</dd>
+        <dt class="kicker" data-i18n="m_budget">"BUDGET"</dt>
+        <dd class="hlblock">
+          <img src="assets/hero/m_3000.png" alt="3000" class="hl-num hl-only-ru">
+          <span class="hl-only-en">3 000</span>
+          <span> €</span>
+        </dd>
+        <dt class="kicker" data-i18n="m_loc">"LOC."</dt><dd data-i18n="loc_v">CAMP&nbsp;/&nbsp;STUDIO</dd>
+      </dl>
     </div>
   </section>
 
+  <!-- BOARD -->
   <section class="board">
-    <h2 data-i18n="board_h">Раскадровка</h2>
-    <p class="board-sub" data-i18n="board_sub">Семь кадров по структуре трека. Восковые мелки, белая бумага.</p>
+    <div class="sec-h">
+      <img src="assets/hero/h_board.png" alt="РАСКАДРОВКА" class="hl-only-ru">
+      <span class="hl-only-en">STORYBOARD</span>
+      <span class="kicker dim">"7 FRAMES"</span>
+    </div>
 
-    <article class="frame" id="f01">
+    <article class="frame" id="f01" data-time="00:00" data-time-flat="0000">
       <div class="frame-img"><img src="drawings/01.png" alt="" loading="lazy"></div>
       <div class="frame-meta">
-        <div class="frame-num">01 · INTRO</div>
-        <div class="frame-time" data-time="00:00">00:00 — 00:30</div>
-        <h3 data-i18n="f01_h">Вступление</h3>
-        <p class="lyric instrum" data-i18n="f01_l">— инструментал —</p>
-        <p data-i18n="f01_p">Палатки, бирки, забор-сетка. Клоун стоит спиной, тиняшный, лицо не видно. Лагерь дышит. Откуда-то — первый удар.</p>
+        <div class="frame-top">
+          <img src="assets/hero/i_01.png" alt="01" class="frame-num hl-only-ru">
+          <span class="frame-num-en hl-only-en">01</span>
+          <span class="kicker dim">/&nbsp;07</span>
+        </div>
+        <div class="frame-time">
+          <img src="assets/hero/ts_0000.png" alt="00:00" class="hl-ts hl-only-ru" data-ts-insert-colon>
+          <span class="hl-only-en">00:00 — 00:30</span>
+        </div>
+        <h3 class="frame-title">
+          <img src="assets/hero/t_intro.png" alt="ВСТУПЛЕНИЕ" class="hl-only-ru">
+          <span class="hl-only-en">INTRO</span>
+        </h3>
+        <p class="lyric instrum" data-i18n="f01_l">«— ИНСТРУМЕНТАЛ —»</p>
+        <p class="frame-desc" data-i18n="f01_p">Палатки, бирки, забор-сетка. Клоун стоит спиной, тиняшный, лицо не видно. Лагерь дышит. Откуда-то — первый удар.</p>
       </div>
     </article>
 
-    <article class="frame" id="f02">
+    <article class="frame" id="f02" data-time="00:30" data-time-flat="0030">
       <div class="frame-img"><img src="drawings/02.png" alt="" loading="lazy"></div>
       <div class="frame-meta">
-        <div class="frame-num">02 · ВЕРС 1</div>
-        <div class="frame-time" data-time="00:30">00:30 — 01:06</div>
-        <h3 data-i18n="f02_h">Куплет 1</h3>
-        <p class="lyric" data-i18n="f02_l">«Только в протоколах у полиции / И вроде бы все кореша и паци / И вроде бы ни с кем не конфронтации // Но на монтаже тебя вычеркивают / Словно от тебя уже печенки гниют»</p>
-        <p data-i18n="f02_p">Руки клоуна перебирают бумаги — анкеты, протоколы. Он проходит мимо групп: митингующие, тусовка, кореша. Никого не задевает, никуда не вливается. Все его «вычеркивают».</p>
+        <div class="frame-top">
+          <img src="assets/hero/i_02.png" alt="02" class="frame-num hl-only-ru">
+          <span class="frame-num-en hl-only-en">02</span>
+          <span class="kicker dim">/&nbsp;07</span>
+        </div>
+        <div class="frame-time">
+          <img src="assets/hero/ts_0030.png" alt="00:30" class="hl-ts hl-only-ru" data-ts-insert-colon>
+          <span class="hl-only-en">00:30 — 01:06</span>
+        </div>
+        <h3 class="frame-title">
+          <img src="assets/hero/t_verse1.png" alt="КУПЛЕТ 1" class="hl-only-ru">
+          <span class="hl-only-en">VERSE 1</span>
+        </h3>
+        <p class="lyric" data-i18n="f02_l">«ТОЛЬКО В ПРОТОКОЛАХ У ПОЛИЦИИ / И ВРОДЕ БЫ ВСЕ КОРЕША И ПАЦИ // НО НА МОНТАЖЕ ТЕБЯ ВЫЧЕРКИВАЮТ / СЛОВНО ОТ ТЕБЯ УЖЕ ПЕЧЕНКИ ГНИЮТ»</p>
+        <p class="frame-desc" data-i18n="f02_p">Руки клоуна перебирают бумаги — анкеты, протоколы. Он проходит мимо групп: митингующие, тусовка, кореша. Никого не задевает, никуда не вливается. Все его «вычеркивают».</p>
       </div>
     </article>
 
-    <article class="frame" id="f03">
+    <article class="frame" id="f03" data-time="01:06" data-time-flat="0106">
       <div class="frame-img"><img src="drawings/03.png" alt="" loading="lazy"></div>
       <div class="frame-meta">
-        <div class="frame-num">03 · ПРИПЕВ</div>
-        <div class="frame-time" data-time="01:06">01:06 — 01:37</div>
-        <h3 data-i18n="f03_h">Припев</h3>
-        <p class="lyric" data-i18n="f03_l">«Свобода и никчемность / Свобода и неопрекаемость / Свобода и обреченность»</p>
-        <p data-i18n="f03_p">Широкий план. Клоун маленький в огромном лагере. Замедление. Холодный неон. Слово «свобода» — как пустая жестянка на ветру.</p>
+        <div class="frame-top">
+          <img src="assets/hero/i_03.png" alt="03" class="frame-num hl-only-ru">
+          <span class="frame-num-en hl-only-en">03</span>
+          <span class="kicker dim">/&nbsp;07</span>
+        </div>
+        <div class="frame-time">
+          <img src="assets/hero/ts_0106.png" alt="01:06" class="hl-ts hl-only-ru" data-ts-insert-colon>
+          <span class="hl-only-en">01:06 — 01:37</span>
+        </div>
+        <h3 class="frame-title">
+          <img src="assets/hero/t_chorus.png" alt="ПРИПЕВ" class="hl-only-ru">
+          <span class="hl-only-en">CHORUS</span>
+        </h3>
+        <p class="lyric" data-i18n="f03_l">«СВОБОДА И НИКЧЕМНОСТЬ / СВОБОДА И НЕОПРЕКАЕМОСТЬ / СВОБОДА И ОБРЕЧЕННОСТЬ»</p>
+        <p class="frame-desc" data-i18n="f03_p">Широкий план. Клоун маленький в огромном лагере. Замедление. Холодный неон. Слово «свобода» — как пустая жестянка на ветру.</p>
       </div>
     </article>
 
-    <article class="frame" id="f04">
+    <article class="frame" id="f04" data-time="01:53" data-time-flat="0153">
       <div class="frame-img"><img src="drawings/04.png" alt="" loading="lazy"></div>
       <div class="frame-meta">
-        <div class="frame-num">04 · ВЕРС 2</div>
-        <div class="frame-time" data-time="01:53">01:53 — 02:12</div>
-        <h3 data-i18n="f04_h">Куплет 2</h3>
-        <p class="lyric" data-i18n="f04_l">«Какие-то чужие представители проваливают миссию в правители / Все из себя свободные, опальные / Голодные, скандальные // Они мне строят жизнь после смерти / Какое поле выжженное там за спиной»</p>
-        <p data-i18n="f04_p">Клоуна обступает делегация — «представители» в плохо сидящих костюмах. Они говорят, машут бумагой, ставят печать. За спиной у клоуна — выжженное поле, дым из палаток.</p>
+        <div class="frame-top">
+          <img src="assets/hero/i_04.png" alt="04" class="frame-num hl-only-ru">
+          <span class="frame-num-en hl-only-en">04</span>
+          <span class="kicker dim">/&nbsp;07</span>
+        </div>
+        <div class="frame-time">
+          <img src="assets/hero/ts_0153.png" alt="01:53" class="hl-ts hl-only-ru" data-ts-insert-colon>
+          <span class="hl-only-en">01:53 — 02:12</span>
+        </div>
+        <h3 class="frame-title">
+          <img src="assets/hero/t_verse2.png" alt="КУПЛЕТ 2" class="hl-only-ru">
+          <span class="hl-only-en">VERSE 2</span>
+        </h3>
+        <p class="lyric" data-i18n="f04_l">«КАКИЕ-ТО ЧУЖИЕ ПРЕДСТАВИТЕЛИ ПРОВАЛИВАЮТ МИССИЮ В ПРАВИТЕЛИ / ВСЕ ИЗ СЕБЯ СВОБОДНЫЕ, ОПАЛЬНЫЕ / ГОЛОДНЫЕ, СКАНДАЛЬНЫЕ // ОНИ МНЕ СТРОЯТ ЖИЗНЬ ПОСЛЕ СМЕРТИ / КАКОЕ ПОЛЕ ВЫЖЖЕННОЕ ТАМ ЗА СПИНОЙ»</p>
+        <p class="frame-desc" data-i18n="f04_p">Клоуна обступает делегация — «представители» в плохо сидящих костюмах. Они говорят, машут бумагой, ставят печать. За спиной у клоуна — выжженное поле, дым из палаток.</p>
       </div>
     </article>
 
-    <article class="frame" id="f05">
+    <article class="frame" id="f05" data-time="02:12" data-time-flat="0212">
       <div class="frame-img"><img src="drawings/05.png" alt="" loading="lazy"></div>
       <div class="frame-meta">
-        <div class="frame-num">05 · БРИДЖ</div>
-        <div class="frame-time" data-time="02:12">02:12 — 02:21</div>
-        <h3 data-i18n="f05_h">Бридж</h3>
-        <p class="lyric" data-i18n="f05_l">«Порой наваливает в тоска / Что одним предатель, другим маскаль / Думаешь, зато это не маска / Зато это не маска»</p>
-        <p data-i18n="f05_p">Клоун перед зеркалом. Долго смотрит. Отражение чуть запаздывает. Поднимает руку — отражение поднимает. Снимает с лица что-то — отражение не снимает.</p>
+        <div class="frame-top">
+          <img src="assets/hero/i_05.png" alt="05" class="frame-num hl-only-ru">
+          <span class="frame-num-en hl-only-en">05</span>
+          <span class="kicker dim">/&nbsp;07</span>
+        </div>
+        <div class="frame-time">
+          <img src="assets/hero/ts_0212.png" alt="02:12" class="hl-ts hl-only-ru" data-ts-insert-colon>
+          <span class="hl-only-en">02:12 — 02:21</span>
+        </div>
+        <h3 class="frame-title">
+          <img src="assets/hero/t_bridge.png" alt="БРИДЖ" class="hl-only-ru">
+          <span class="hl-only-en">BRIDGE</span>
+        </h3>
+        <p class="lyric" data-i18n="f05_l">«ПОРОЙ НАВАЛИВАЕТ В ТОСКА / ЧТО ОДНИМ ПРЕДАТЕЛЬ, ДРУГИМ МАСКАЛЬ / ДУМАЕШЬ, ЗАТО ЭТО НЕ МАСКА / ЗАТО ЭТО НЕ МАСКА»</p>
+        <p class="frame-desc" data-i18n="f05_p">Клоун перед зеркалом. Долго смотрит. Отражение чуть запаздывает. Поднимает руку — отражение поднимает. Снимает с лица что-то — отражение не снимает.</p>
       </div>
     </article>
 
-    <article class="frame" id="f06">
+    <article class="frame" id="f06" data-time="02:21" data-time-flat="0221">
       <div class="frame-img"><img src="drawings/06.png" alt="" loading="lazy"></div>
       <div class="frame-meta">
-        <div class="frame-num">06 · РЕПРИЗА</div>
-        <div class="frame-time" data-time="02:21">02:21 — 03:00</div>
-        <h3 data-i18n="f06_h">Припев / реприза</h3>
-        <p class="lyric" data-i18n="f06_l">«Свобода и никчемность…» — на вокализе</p>
-        <p data-i18n="f06_p">Быстрый монтаж лиц — обитатели лагеря, все чуть не в фокусе. Клоун в центре, статичен. Бумаги, бирки, мел. Кто-то моет руки в тазу.</p>
+        <div class="frame-top">
+          <img src="assets/hero/i_06.png" alt="06" class="frame-num hl-only-ru">
+          <span class="frame-num-en hl-only-en">06</span>
+          <span class="kicker dim">/&nbsp;07</span>
+        </div>
+        <div class="frame-time">
+          <img src="assets/hero/ts_0221.png" alt="02:21" class="hl-ts hl-only-ru" data-ts-insert-colon>
+          <span class="hl-only-en">02:21 — 03:00</span>
+        </div>
+        <h3 class="frame-title">
+          <img src="assets/hero/t_reprise.png" alt="РЕПРИЗА" class="hl-only-ru">
+          <span class="hl-only-en">REPRISE</span>
+        </h3>
+        <p class="lyric" data-i18n="f06_l">«СВОБОДА И НИКЧЕМНОСТЬ…» — НА ВОКАЛИЗЕ</p>
+        <p class="frame-desc" data-i18n="f06_p">Быстрый монтаж лиц — обитатели лагеря, все чуть не в фокусе. Клоун в центре, статичен. Бумаги, бирки, мел. Кто-то моет руки в тазу.</p>
       </div>
     </article>
 
-    <article class="frame" id="f07">
+    <article class="frame" id="f07" data-time="03:00" data-time-flat="0300">
       <div class="frame-img"><img src="drawings/07.png" alt="" loading="lazy"></div>
       <div class="frame-meta">
-        <div class="frame-num">07 · ФИНАЛ</div>
-        <div class="frame-time" data-time="03:00">03:00 — 03:27</div>
-        <h3 data-i18n="f07_h">Финал / Аутро</h3>
-        <p class="lyric instrum" data-i18n="f07_l">— затихание —</p>
-        <p data-i18n="f07_p">Клоун снимает с лица — или надевает — что-то. Не показываем что. Лагерь пуст. Только след света на земле и одна перевёрнутая бирка. Стоп-кадр.</p>
+        <div class="frame-top">
+          <img src="assets/hero/i_07.png" alt="07" class="frame-num hl-only-ru">
+          <span class="frame-num-en hl-only-en">07</span>
+          <span class="kicker dim">/&nbsp;07</span>
+        </div>
+        <div class="frame-time">
+          <img src="assets/hero/ts_0300.png" alt="03:00" class="hl-ts hl-only-ru" data-ts-insert-colon>
+          <span class="hl-only-en">03:00 — 03:27</span>
+        </div>
+        <h3 class="frame-title">
+          <img src="assets/hero/t_final.png" alt="ФИНАЛ" class="hl-only-ru">
+          <span class="hl-only-en">OUTRO</span>
+        </h3>
+        <p class="lyric instrum" data-i18n="f07_l">«— ЗАТИХАНИЕ —»</p>
+        <p class="frame-desc" data-i18n="f07_p">Клоун снимает с лица — или надевает — что-то. Не показываем что. Лагерь пуст. Только след света на земле и одна перевёрнутая бирка. Стоп-кадр.</p>
       </div>
     </article>
   </section>
 
+  <!-- PROD -->
   <section class="prod">
-    <h2 data-i18n="prod_h">Производство</h2>
+    <div class="sec-h">
+      <img src="assets/hero/h_prod.png" alt="ПРОИЗВОДСТВО" class="hl-only-ru">
+      <span class="hl-only-en">PRODUCTION</span>
+      <span class="kicker dim">"03 / 04"</span>
+    </div>
     <div class="prod-grid">
       <div class="prod-col">
-        <h3 data-i18n="prod_need_h">Нужно</h3>
-        <ul>
+        <h4 class="kicker" data-i18n="prod_need_h">"NEEDED"</h4>
+        <ul class="prodlist">
           <li data-i18n="need_1">Декорации лагеря (палатки, сетка, бирки) — найдём</li>
           <li data-i18n="need_2">1 день съёмки</li>
           <li data-i18n="need_3">1–2 светильника + дневной</li>
           <li data-i18n="need_4">Камера + оператор</li>
-          <li data-i18n="need_5">Грим клоуна (тихий, сухой)</li>
+          <li data-i18n="need_5">Грим клоуна — тихий, сухой</li>
           <li data-i18n="need_6">Реквизит — бумаги, тазик, зеркало</li>
         </ul>
       </div>
       <div class="prod-col">
-        <h3 data-i18n="prod_team_h">Команда</h3>
-        <ul>
+        <h4 class="kicker" data-i18n="prod_team_h">"CREW"</h4>
+        <ul class="prodlist">
           <li data-i18n="team_1">Режиссёр — Василий Берёзин</li>
           <li data-i18n="team_2">Артист — Павел Фахрутдинов</li>
           <li data-i18n="team_3">Оператор — TBD</li>
@@ -169,8 +280,11 @@
     </div>
   </section>
 
+  <!-- FOOT -->
   <footer class="foot">
-    <div class="foot-mark">© 2026 · <span data-i18n="foot">препродакшн</span></div>
+    <span class="kicker">© 2026</span>
+    <span class="kicker dim">"PRE-PRODUCTION" — V.B. ×&nbsp;P.F.</span>
+    <span class="kicker dim">PARIS</span>
   </footer>
 
 </main>
