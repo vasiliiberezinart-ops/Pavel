@@ -227,7 +227,17 @@ section:first-of-type { border-top: none; }
   letter-spacing: 0.02em;
 }
 .concept-meta dd.hlblock {
-  display: flex; align-items: baseline; gap: 6px;
+  display: flex; align-items: baseline; gap: 8px;
+  flex-wrap: wrap;
+}
+.concept-meta dd.hlblock img {
+  height: 22px;
+  width: auto;
+  vertical-align: baseline;
+}
+.concept-meta dd.dirs img + img { /* second director on next line */
+  display: block;
+  margin-top: 2px;
 }
 .hl-num {
   height: 24px;
