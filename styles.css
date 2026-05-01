@@ -245,6 +245,41 @@ section:first-of-type { border-top: none; }
   vertical-align: baseline;
 }
 
+/* ── LOCATION ─────────────────────────────────────── */
+.loc-caption { margin-bottom: 22px; }
+.loc-caption img { height: 36px; width: auto; }
+.loc-text {
+  font-size: 16px; line-height: 1.45; color: var(--ink);
+  font-weight: 600; text-transform: uppercase; letter-spacing: 0.02em;
+  max-width: 60ch; margin-bottom: 36px;
+}
+.loc-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+}
+.loc-figure { display: flex; flex-direction: column; gap: 12px; }
+.loc-figure img {
+  width: 100%; aspect-ratio: 4/5; object-fit: cover;
+  border: 1px solid var(--rule);
+  filter: contrast(1.05);
+}
+.loc-figure figcaption { letter-spacing: 0.04em; }
+
+.loc-painting {
+  margin-top: 36px;
+  display: flex; flex-direction: column; gap: 12px;
+  align-items: flex-start;
+}
+.loc-painting img {
+  width: 100%; max-width: 720px;
+  border: 1px solid var(--rule);
+  filter: contrast(1.02);
+}
+.loc-painting figcaption { letter-spacing: 0.04em; }
+
+@media (max-width: 720px) {
+  .loc-grid { grid-template-columns: 1fr; }
+}
+
 /* ── BOARD ────────────────────────────────────────────── */
 .frame {
   display: grid;
