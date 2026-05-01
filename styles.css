@@ -314,14 +314,7 @@ section:first-of-type { border-top: none; }
   background: #fff;
 }
 .frame-img img:not([src]),
-.frame-img img[src=""],
-.frame-img img[src$="/01.png"]:not([data-loaded]),
-.frame-img img[src$="/02.png"]:not([data-loaded]),
-.frame-img img[src$="/03.png"]:not([data-loaded]),
-.frame-img img[src$="/04.png"]:not([data-loaded]),
-.frame-img img[src$="/05.png"]:not([data-loaded]),
-.frame-img img[src$="/06.png"]:not([data-loaded]),
-.frame-img img[src$="/07.png"]:not([data-loaded]) { display: none; }
+.frame-img img[src=""] { display: none; }
 
 .frame-meta { padding-top: 0; }
 
