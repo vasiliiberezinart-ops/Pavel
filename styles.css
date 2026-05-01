@@ -260,7 +260,7 @@ section:first-of-type { border-top: none; }
 .frame-img {
   background: #fafafa;
   border: 1px solid var(--rule);
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   display: flex; align-items: center; justify-content: center;
   position: relative;
   overflow: hidden;
@@ -275,7 +275,8 @@ section:first-of-type { border-top: none; }
 }
 .frame-img img {
   position: relative; z-index: 1;
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: contain;
+  background: #fff;
 }
 .frame-img img:not([src]),
 .frame-img img[src=""],
